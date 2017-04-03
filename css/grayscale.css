@@ -1,0 +1,174 @@
+
+body {
+    width: 100%;
+    height: 100%;
+   font-family:Raleway;
+    color: #000;
+    /*background-color: #FFF;*/
+    letter-spacing: .1em;
+    font-size: 2vmin;
+
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family:Raleway;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+
+h1 {
+  font-size: 3.5vw;
+}
+
+.lead {
+  font-size: 3vmin;
+}
+
+
+
+a {
+    color: #FFFFFF;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: bolder;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: bolder;
+}
+
+.tile{
+    height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    background-color: #3d4040;
+}
+
+#sc0{
+    background-image: url("../img/1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-color: #286090;
+
+}
+
+#sc1{
+    background-image: url("../img/2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+     text-align: right;
+      background-color: #3d4040;
+       padding-right: 1em;
+    padding-left: 1em;
+}
+
+#sc2{
+    background-image: url("../img/3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+   background-color:#a1d0dd;
+   padding-right: 1em;
+    padding-left: 1em;
+
+}
+
+#sc3{
+    background-image: url("../img/4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    text-align: right;
+    
+    background-color: #2d829a;
+}
+.navbar a{
+    font-size:1.1em;
+
+}
+#nav-dots{
+    width:3em;
+    height:100%;
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding-left:1em;
+}
+
+#nav-dots a{
+    margin:1em;
+}
+#nav-dots a div{
+    background: #FFFFFF;
+    clear: both;
+    width:10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    opacity: .5;
+    transition: all 1s;
+}
+
+
+#nav-dots a .selected{
+opacity: 1;
+transform: scale(1.5);
+}
+
+#preorder button{
+    position: fixed;
+    color: #26C6DA;
+    right: 10%;
+    padding: 1em;
+    width:20%;
+    bottom:0;
+    z-index: 15;
+    background:#FFFFFF;
+    border-radius: .5em .5em 0px 0px;
+    box-shadow: 0px 0px 5px #CCCCCC;
+    border-color: none;
+}
+
+
+.modal-dialog{
+  width:whatever;
+}
