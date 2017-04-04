@@ -205,3 +205,8 @@ transform: scale(1.5);
 .modal-dialog{
   width:whatever;
 }
+@media  (max-width: 765px) {
+	.tile{
+		height: 50%;
+	}
+}
