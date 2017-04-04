@@ -9,7 +9,10 @@ body {
     font-size: 2vmin;
 
 }
+*{
+	box-sizing: border-box;
 
+}
 
 html {
     width: 100%;
@@ -68,26 +71,32 @@ a:focus {
     text-decoration: none;
     color: #FFFF;
     font-weight: bolder;
-    background-color: white;
+    background-color: black;
 }
 
 .tile{
-    height: 100%;
+	height: 100%;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     background-color: #3d4040;
+    padding-right:5%;
 }
 
 #sc0{
     background-image: url("../img/1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: 20%;
+    background-position-x: 10%;
     background-color: #286090;
+}
+@media  (max-width: 765px) {
+    #sc0{
+    	background-size: 45%;
+    	background-position-x: 50%;    	
+    	}
 
 }
-
 #sc1{
     background-image: url("../img/2.png");
     background-size: contain;
@@ -98,16 +107,32 @@ a:focus {
        padding-right: 1em;
     padding-left: 1em;
 }
+@media  (max-width: 765px) {
+    #sc1{
+    	background-size: 50%;
+    	background-position-x: 100%;
+    	text-align: left;
+
+    }
+
+}
 
 #sc2{
     background-image: url("../img/3.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 0%;
+    background-position-y:bottom;
    background-color:#a1d0dd;
    padding-right: 1em;
     padding-left: 1em;
 
+}
+@media  (max-width: 765px) {
+    #sc2{
+    	background-size: 50%;
+
+    }
 }
 
 #sc3{
@@ -118,6 +143,13 @@ a:focus {
     text-align: right;
     
     background-color: #2d829a;
+}
+@media  (max-width: 765px) {
+    #sc3{
+    	background-size: 50%;
+    	background-position-x: 50%;
+
+    }
 }
 .navbar a{
     font-size:1.1em;
@@ -159,7 +191,7 @@ transform: scale(1.5);
     position: fixed;
     color: #26C6DA;
     right: 10%;
-    padding: 1em;
+    padding: 2%;
     width:20%;
     bottom:0;
     z-index: 15;
