@@ -80,21 +80,22 @@ body {
 #team .txt .list-inline{
      text-align: center;
 }
-a:hover,
-a:focus {
-    text-decoration: none;
-    color:black;
-    font-weight: bolder;
-}
 a
 {
     text-decoration: none;
-    color:black;
+    color:#FFFFF;
     font-weight: bolder;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color:#FFFF;
+    font-weight: bolder;
+}
 #teamnavbar{
-    background:#F5F5F5;
+    background:black;
 }

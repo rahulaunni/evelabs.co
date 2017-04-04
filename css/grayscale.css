@@ -68,6 +68,7 @@ a:focus {
     text-decoration: none;
     color: #FFFF;
     font-weight: bolder;
+    background-color: white;
 }
 
 .tile{
