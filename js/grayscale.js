@@ -1,3 +1,5 @@
+$(window).resize(function() {
+   if ($(this).width() > 768) {
 var body = document.body,
     html = document.documentElement;
 var height = Math.max( body.scrollHeight, body.offsetHeight, 
@@ -5,6 +7,8 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 var last_off=0;
 var animating=0;
 window.location.hash='#sc0';
+
+
 $(window).scroll(function(e) {   
 Offset =Math.round((($(window).scrollTop() || $("body").scrollTop())/height*100));
 
@@ -87,4 +91,9 @@ $(this).children().addClass("selected");
 
   } // End if
 
+});
+}
+});
+$(document).ready(function() {
+   $(window).resize();
 });
