@@ -115,24 +115,24 @@
 <form action="https://formspree.io/evelabs.co@gmail.com" method="POST">
            <div class="form-group">
     <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email" name="email">
+    <input type="text"  data-validation="email" class="form-control" id="email" name="email" required>
   </div>
 
       <div class="form-group">
     <label for="phnum">Phone Number:</label>
-    <input type="text" class="form-control" id="phnum" name="phnum">
+    <input type="text" data-validation="custom" data-validation-regexp="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$"  class="form-control" id="phnum" name="phnum" value="+91" required>
   </div>
   
 
     <div class="form-group">
     <label for="no">Number of Stations:</label>
-    <input type="number" class="form-control" id="no" name="no">
+    <input type="number" data-validation-allowing="range[1;100000000000]"class="form-control" id="no" name="no" required>
   </div>
 
 
     <div class="form-group">
     <label for="comment">Address:</label>
-  <textarea class="form-control" rows="5" id="address" name="address"></textarea>
+  <textarea class="form-control" rows="5" id="address" name="address" required></textarea>
   </div>
 
 <button type="submit" class="btn btn-primary" value="Send">Send Enquiry</button>
@@ -146,7 +146,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/grayscale.js"></script>
 </body>

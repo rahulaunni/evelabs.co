@@ -19,14 +19,8 @@ html {
     height: 100%;
 }
 
-@media (max-width: @screen-xs) {
-    body{font-size: 10px;}
-}
 
-@media (max-width: @screen-sm) {
-    body{font-size: 14px;}
 
-}
 
 h1,
 h2,
@@ -43,18 +37,15 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 30px;
     line-height: 1.5;
 }
 
 
-h1 {
-  font-size: 3.5vw;
-}
 
-.lead {
+
+/*.lead {
   font-size: 3vmin;
-}
+}*/
 
 
 
@@ -215,10 +206,14 @@ transform: scale(1.5);
 	.tile{height: 100vh;
 		padding:0;}
 	.mb1 span{text-align: center;
-		width:100%;}
+		width:100%;
+		font-size: 2em;
+	}
 	.mb2 span{text-align: center;
 		width:100%;
-	    color:black;}
+	    color:black;
+	font-size: 2em;
+}
 	.tile div{
 		height: 50vh;
 	}

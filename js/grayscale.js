@@ -96,4 +96,10 @@ $(this).children().addClass("selected");
 });
 $(document).ready(function() {
    $(window).resize();
+
+   $.validate();
+
+
 });
+
+
